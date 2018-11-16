@@ -26,7 +26,7 @@ public class LoginServlet extends HttpServlet {
         String password = req.getParameter("pass");
         String remember = req.getParameter("remember");
         HttpSession session = req.getSession();
-
+        //add comment, test commit git
         if (UserMap.myMap.containsKey(userName) && UserMap.myMap.get(userName).getPass().equals(password)) {
 
             session.setAttribute("user_info", userName);
